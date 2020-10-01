@@ -28,11 +28,16 @@ class Main {
   }
 
   public static void main(String args[]) {
+    try{
     int[] data = { 3, 65, 4,89, 0, 12, 6 };
     int size = data.length;
     Main qs = new Main();
-    qs.quickSort(data, 0, size - 1);
+    qs.quickSort(data, 0, size - 1); 
+    System.out.println("Sorted Array is\n");
+
     System.out.println("Arraysort  is the following -> ");
+ master
     System.out.println(Arrays.toString(data));
-  }
+  }catch(Exception e){};
+}
 }
