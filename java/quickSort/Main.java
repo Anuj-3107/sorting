@@ -1,5 +1,5 @@
  // quickSort .................Below
-
+import java.util.*;
 import java.util.Arrays;
 
 class Main {
@@ -19,16 +19,16 @@ class Main {
     arr[high] = temp;
     return (i + 1);
   }
-  void quickSort(int arr[], int low, int high) {
+  void quickSort(int a[], int low, int high) {
     if (low < high) {
-      int pi = partition(arr, low, high);
-      quickSort(arr, low, pi - 1);
-      quickSort(arr, pi + 1, high);
+      int pi = partition(a, low, high);
+      quickSort(a, low, pi - 1);
+      quickSort(a, pi + 1, high);
     }
   }
 
   public static void main(String args[]) {
-    int[] data = { 3, 1, 4, 9, 0, 12, 6 };
+    int[] data = { 3, 65, 4,89, 0, 12, 6 };
     int size = data.length;
     Main qs = new Main();
     qs.quickSort(data, 0, size - 1);
