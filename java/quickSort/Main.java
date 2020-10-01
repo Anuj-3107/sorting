@@ -1,4 +1,4 @@
- // quickSort .................Below
+
 import java.util.*;
 import java.util.Arrays;
 
@@ -32,7 +32,7 @@ class Main {
     int size = data.length;
     Main qs = new Main();
     qs.quickSort(data, 0, size - 1);
-    System.out.println("Sorted Array is the following -> ");
+    System.out.println("Arraysort  is the following -> ");
     System.out.println(Arrays.toString(data));
   }
 }
