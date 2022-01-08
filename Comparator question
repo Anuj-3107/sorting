@@ -40,3 +40,20 @@ class Solution {
         return ans;
     }
 }
+
+
+# Priority Queue with comparator declaration
+
+PriorityQueue<Integer> pq=new PriorityQueue<Integer>(new Comparator<Integer>() 
+                {
+                    public int compare(Integer a, Integer b)
+                    {
+                        if(map.get(a)==map.get(b))
+                        {
+                            return a-b;
+                        }
+                        else{
+                            return map.get(a)-map.get(b);
+                        }
+                    }
+                });
